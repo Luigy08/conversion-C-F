@@ -15,15 +15,16 @@
           <ion-row class="conversion_row" margin-left="15%">
             <ion-col col-4>
                 <ion-item>
-                  <ion-input placeholder="°C"></ion-input>
+                  <ion-input [placeholder]="holder" name="inputGrado" [value]="Fa" [(ngModel)]="Fa" type="number" (keyup)="conversionC()">
+                  </ion-input>
                 </ion-item>
             </ion-col>
             <ion-col col-3>
-                <button ion-button><ion-icon name="swap"></ion-icon></button>
+                <button ion-button (click)=swap()><ion-icon name="swap"></ion-icon></button>
             </ion-col>
             <ion-col col-4>
                 <ion-item>
-                  <ion-input placeholder="°F"></ion-input>
+                  <p>{{holder2}}:{{Response}}</p>
                 </ion-item>
             </ion-col>
           </ion-row>
