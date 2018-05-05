@@ -1,0 +1,30 @@
+page-home {
+  .all{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    display: flex;
+
+  }
+  .left{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
+  .right{
+    display: flex;
+
+    text-align: center;
+    flex-direction: column;
+
+    margin-left: 1%;
+    background-color: #4d4d4d;
+    width: 75%;
+    height: 80%;
+  }
+  #conversion{
+    text-align: center;
+  }
+
+}
